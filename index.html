@@ -1,26 +1,29 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0"> 
-    <title>Here you can calculate your taxes</title> 
-    <link rel="stylesheet" href="style.css">
-    
-</head> 
-  
-<body> 
-    <form name="tax" method="POST" onSubmit="calculateTaxes()">
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1>Tax Calculator</h1> 
-    <h2>What is your salary?</h2> 
-    <br><br> 
-    <div class="buttonIn"> 
-        <input type="text" id="enter"> 
-        <input name="Submit"  type="submit" value="calculate" />
-    </div> 
-   </form>
-</body> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here you can calculate your taxes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form id="tax">
+        <h1>Tax Calculator</h1>
+        <h2>What is your salary?</h2>
+        <br><br>
+        <div class="buttonIn">
+            <input type="text" id="input">
+            <input name="Submit" type="submit" value="calculate" />
+        </div>
+    </form>
+
+    <section id="result">
+
+    </section>
+</body>
 <script src="script.js"></script>
-</html> 
+
+</html>
